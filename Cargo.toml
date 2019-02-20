@@ -1,0 +1,11 @@
+[package]
+name = "clipto"
+version = "0.1.0"
+authors = ["Marc Camillière <camillieremarc@orange.fr>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "^0.2"
+#clipboard = "0.5.0"
+base64 = "0.10.1"
+x11-clipboard = "0.3.1"
