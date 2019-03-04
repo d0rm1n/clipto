@@ -6,26 +6,6 @@ extern crate x11_clipboard;
 use std::env;
 use x11_clipboard::Clipboard;
 
-struct Filter {
-    /// Struct used to filter password characters.
-    lowercase:  bool,
-    uppercase:  bool,
-    digits:     bool,
-    specials:   bool,
-}
-
-impl Filter {
-    pub fn new(lowercase: bool, uppercase: bool, digits: bool, specials: bool)
-            -> Filter {
-        Filter {
-            lowercase:  lowercase,
-            uppercase:  uppercase,
-            digits:     digits,
-            specials:   specials,
-        }
-    }
-}
-
 fn main() {
 
     // argv
